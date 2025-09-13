@@ -3,6 +3,20 @@
   "organizeImports": {
     "enabled": true
   },
+  "files": {
+    "ignore": [
+      ".turbo",
+      "node_modules",
+      "dist",
+      "apps/**/dist",
+      "apps/**/.turbo",
+      "apps/**/node_modules",
+      "apps/**/.next",
+      "packages/**/dist",
+      "packages/**/.turbo",
+      "packages/**/node_modules"
+    ]
+  },
   "linter": {
     "enabled": true,
     "rules": {
