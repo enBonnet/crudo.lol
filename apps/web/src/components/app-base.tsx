@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function AppBase() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
