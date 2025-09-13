@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+	<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+		<div class="max-w-4xl mx-auto px-4 text-center">
+			<h1 class="text-5xl font-bold text-gray-900 mb-6">
+				Crudo.lol
+			</h1>
+			<p class="text-xl text-gray-600 mb-8">
+				The Rotten Tomatoes for programming job posts. Rate job listings as Crudo, Claro, or Pulido.
+			</p>
+			<div class="space-y-4 mb-12">
+				<div class="flex justify-center space-x-8">
+					<div class="text-center">
+						<div class="bg-red-100 text-red-800 px-4 py-2 rounded-full font-medium">Crudo</div>
+						<p class="text-sm text-gray-600 mt-1">Raw/Unrefined</p>
+					</div>
+					<div class="text-center">
+						<div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-medium">Claro</div>
+						<p class="text-sm text-gray-600 mt-1">Clear/Bright</p>
+					</div>
+					<div class="text-center">
+						<div class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">Pulido</div>
+						<p class="text-sm text-gray-600 mt-1">Polished/Refined</p>
+					</div>
+				</div>
+			</div>
+			<a
+				href="/app"
+				class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors"
+			>
+				Start Rating Jobs
+			</a>
+		</div>
+	</div>
+</Layout>

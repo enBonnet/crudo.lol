@@ -1,0 +1,17 @@
+{
+  "name": "@crudo/api",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "wrangler dev",
+    "dev:api": "wrangler dev",
+    "build": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@crudo/types": "workspace:*",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}

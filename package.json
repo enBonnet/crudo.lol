@@ -2,13 +2,26 @@
   "name": "crudo.lol",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@8.6.0",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "turbo dev --filter=@crudo/web",
+    "dev:api": "turbo dev --filter=@crudo/api",
+    "dev:all": "concurrently \"pnpm dev\" \"pnpm dev:api\"",
+    "build": "turbo build",
+    "preview": "turbo preview",
+    "clean": "turbo clean",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format .",
+    "format:write": "biome format --write ."
   },
-  "dependencies": {
-    "astro": "^5.13.7"
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "@biomejs/biome": "^1.0.0",
+    "concurrently": "^8.0.0"
   }
 }
